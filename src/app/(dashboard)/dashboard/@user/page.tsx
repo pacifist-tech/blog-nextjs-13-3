@@ -1,8 +1,11 @@
 import React from "react";
-import DashboardSection from "../../DashboardSection";
 
 const DashboardUserPage = () => {
-	return <DashboardSection className="bg-heavy">User Page</DashboardSection>;
+	return (
+		<div className="bg-secondary text-white w-full flex items-center justify-center">
+			User See This
+		</div>
+	);
 };
 
 export default DashboardUserPage;

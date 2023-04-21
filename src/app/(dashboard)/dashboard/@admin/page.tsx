@@ -1,9 +1,10 @@
 import React from "react";
-import DashboardSection from "../../DashboardSection";
 
 const DashboardAdminPage = () => {
 	return (
-		<DashboardSection className="bg-secondary">Admin Page</DashboardSection>
+		<div className="bg-primary text-white w-full flex items-center justify-center">
+			Admin See This
+		</div>
 	);
 };
 
