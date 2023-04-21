@@ -21,7 +21,11 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body style={{ ...font.style }}>{children}</body>
+			<body style={{ ...font.style }}>
+				<main className="bg-white  text-[#593AC4] min-h-screen flex items-center justify-center">
+					{children}
+				</main>
+			</body>
 		</html>
 	);
 }
