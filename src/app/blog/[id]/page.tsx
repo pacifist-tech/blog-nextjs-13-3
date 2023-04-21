@@ -10,4 +10,12 @@ const BlogPage = ({ params }: { params: { id: string } }) => {
 	);
 };
 
+export async function generateStaticParams() {
+	const posts = ["1", "2"];
+
+	return posts.map((id) => ({
+		id,
+	}));
+}
+
 export default BlogPage;
