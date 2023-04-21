@@ -3,7 +3,7 @@ import DashboardSection from "../../DashboardSection";
 
 const DashboardAdminPage = () => {
 	return (
-		<DashboardSection className="bg-secondary ">Admin Page</DashboardSection>
+		<DashboardSection className="bg-secondary">Admin Page</DashboardSection>
 	);
 };
 

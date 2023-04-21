@@ -18,8 +18,7 @@ export default function Layout({
 	children,
 	user,
 	admin,
-}: // user,
-{
+}: {
 	children: React.ReactNode;
 	user: React.ReactNode;
 	admin: React.ReactNode;
