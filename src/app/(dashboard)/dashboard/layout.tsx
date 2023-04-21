@@ -1,5 +1,5 @@
 import { Poppins } from "next/font/google";
-import "./globals.css";
+import "@/app/globals.css";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,16 +14,23 @@ const font = Poppins({
 	variable: "--sans-font",
 });
 
-export default function RootLayout({
+export default function Layout({
 	children,
-}: {
+	user,
+	admin,
+}: // user,
+{
 	children: React.ReactNode;
+	user: React.ReactNode;
+	admin: React.ReactNode;
 }) {
 	return (
 		<html lang="en">
 			<body style={{ ...font.style }}>
-				<main className="bg-white  text-[#593AC4] min-h-screen flex items-center justify-center">
+				<main className="bg-slate-900 grid grid-cols-3  text-white min-h-screen  items-center justify-center">
+					{user}
 					{children}
+					{admin}
 				</main>
 			</body>
 		</html>
